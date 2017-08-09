@@ -9,6 +9,7 @@
     <label>
       <span>Name: (required)</span>
       <input placeholder="Please enter your name" name="name" type="text" tabindex="1" autofocus>
+      <?php $name_error ?>
     </label>
   </div>
   
@@ -16,6 +17,7 @@
     <label>
       <span>Email: (required)</span>
       <input placeholder="Please enter your email address" name="email" type="text" tabindex="2">
+      <span class="error"><?php $email_error ?></span>
     </label>
   </div>
   
@@ -23,6 +25,7 @@
     <label>
       <span>Telephone: (required)</span>
       <input placeholder="Please enter your number" name="phone" type="text" tabindex="3">
+      <span class="error"><?php $phone_error ?></span>
     </label>
   </div>
   
@@ -30,6 +33,7 @@
     <label>
       <span>Subject: (optional)</span>
       <input placeholder="Subject" name="subject" type="text" tabindex="4">
+      <span class="error"><?php $sub_error ?></span>
     </label>
   </div>
   
@@ -37,6 +41,7 @@
     <label>
       <span>Message: (required)</span>
       <textarea placeholder="Include all the details you can" name="message" tabindex="5"></textarea>
+      <span class="error"><?php $message_error ?></span>
     </label>
   </div>
   
